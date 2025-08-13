@@ -291,9 +291,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/he
 })
 
 Tab:AddButton({
-   Name = "点击复制秘钥",
+   Name = "英文最强战场",
    Callback = function()
-    setclipboard("BestTheStrongest5412Roblox")
+loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Tsb-Movesets-Hub-45038"))()
    end
 })
 
