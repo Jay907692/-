@@ -284,7 +284,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-  Name = "Jay最强战场",
+  Name = "Jay最强战场中文脚本",
   Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/ZuiQiangZhanChang.lua"))()
   end
@@ -414,9 +414,9 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-    Name = "死铁轨脚本1",
+    Name = "死铁轨红叶子",
     Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/DEADRAILS.github.io/refs/heads/main/mainringta.lua"))()
+loadstring(game:HttpGet("https://getnative.cc/script/loader"))()
     end
 })
 
@@ -480,7 +480,7 @@ local player = Window:MakeTab({
 })
 
 player:AddButton({ 
-	Name = "1",
+	Name = "二狗子超强脚本",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/shenqin/refs/heads/main/99day.lua"))()
   	end
