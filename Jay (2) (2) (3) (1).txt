@@ -467,9 +467,9 @@ local player = Window:MakeTab({
 })
 
 player:AddButton({ 
-	Name = "Jay独家制作",
+	Name = "Jay独家制作定于赞助",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/Jay153/5dfdf5d8e27e2c2559d9936c2ddd2dfa1f2c3e2f/.github/workflows/Jay%E6%BA%90%E7%A0%81.txt", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/-/1c2ec445afa9794de9097f1f7b56b153cdf12e8a/%E8%9C%82%E7%BE%A4%E8%84%9A%E6%9C%ACato%E6%B1%89%E5%8C%96%20(1).txt"))()
   	end
 })
 
