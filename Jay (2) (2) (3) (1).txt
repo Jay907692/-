@@ -480,7 +480,7 @@ local player = Window:MakeTab({
 })
 
 player:AddButton({ 
-	Name = "1",
+	Name = "二狗子脚本",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/shenqin/refs/heads/main/99day.lua"))()
   	end
