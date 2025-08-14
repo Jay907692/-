@@ -617,9 +617,9 @@ loadstring(game:HttpGet(SCC_CharPool[1]))()
 })
 
 Tab:AddButton({
-    Name = "🍺杯脚本🍺",
+    Name = "🍺XA脚本🍺",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/bjb"))()
+loadstring(game:HttpGet("https://raw.gitcode.com/Xingtaiduan/Scripts/raw/main/Loader.lua"))()
     end
 })
 
