@@ -223,7 +223,7 @@ JoinText.BackgroundTransparency = 1
 JoinText.Position = UDim2.new(0, 0, 0.453551859, 0)
 JoinText.Size = UDim2.new(0.998024881, 0, 0.146612123, 0)
 JoinText.Font = Enum.Font.GothamBold
-JoinText.Text = "加入Jay脚本"
+JoinText.Text = "加入q群658751343玩更多Jay脚本"
 JoinText.TextColor3 = Color3.new(1, 1, 1)
 JoinText.TextSize = 17
  
@@ -234,7 +234,7 @@ DiscordlinkTest.BackgroundTransparency = 1
 DiscordlinkTest.Position = UDim2.new(0, 0, 0.601092875, 0)
 DiscordlinkTest.Size = UDim2.new(0.998024881, 0, 0.146612123, 0)
 DiscordlinkTest.Font = Enum.Font.GothamBold
-DiscordlinkTest.Text = "q群：658751343"
+DiscordlinkTest.Text = "q群658751343"
 DiscordlinkTest.TextColor3 = Color3.new(1, 1, 1)
 DiscordlinkTest.TextSize = 17
  
@@ -1402,7 +1402,7 @@ Createtitle.BackgroundColor3 = Color3.new(1, 1, 1)
 Createtitle.BackgroundTransparency = 1
 Createtitle.Size = UDim2.new(0, 108, 0, 25)
 Createtitle.Font = Enum.Font.GothamBlack
-Createtitle.Text = "ato汉化脚本"
+Createtitle.Text = "Jay汉化脚本"
 Createtitle.TextColor3 = Color3.new(1, 1, 1)
 Createtitle.TextSize = 14
  
@@ -1438,7 +1438,7 @@ Loadingtext.TextColor3 = Color3.new(0, 0, 0)
 Loadingtext.TextSize = 17
 Loadingtext.TextXAlignment = Enum.TextXAlignment.Left
  
-DarkCyberSynapshitGUI.Name = "[DarkCyber]ato汉化GUI"
+DarkCyberSynapshitGUI.Name = "[DarkCyber]Jay脚本"
 DarkCyberSynapshitGUI.Parent = game.CoreGui
  
 SynapShitPage.Name = "突触屎页"
@@ -1457,7 +1457,7 @@ Createtitle2.BackgroundColor3 = Color3.new(1, 1, 1)
 Createtitle2.BackgroundTransparency = 1
 Createtitle2.Size = UDim2.new(0, 108, 0, 25)
 Createtitle2.Font = Enum.Font.GothamBlack
-Createtitle2.Text = "Jay蜂群脚本"
+Createtitle2.Text = "Jay脚本"
 Createtitle2.TextColor3 = Color3.new(1, 1, 1)
 Createtitle2.TextSize = 14
  
@@ -3417,5 +3417,4 @@ else
 afksnail = false
 Killstumnail.BackgroundColor3 = blue
 end
-
 end)
