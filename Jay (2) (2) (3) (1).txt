@@ -461,15 +461,15 @@ Tab:AddButton({
 })
 
 local player = Window:MakeTab({
-	Name = "🔥能力大战🔥",
+	Name = "🔥蜂群模拟器🔥",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 player:AddButton({ 
-	Name = "1（会覆盖）",
+	Name = "Jay独家制作",
 	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/castycheat/abilitywars/main/Protected%20(29).lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/Jay153/5dfdf5d8e27e2c2559d9936c2ddd2dfa1f2c3e2f/.github/workflows/Jay%E6%BA%90%E7%A0%81.txt", true))()
   	end
 })
 
