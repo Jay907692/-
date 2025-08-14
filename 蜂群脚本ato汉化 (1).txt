@@ -223,7 +223,7 @@ JoinText.BackgroundTransparency = 1
 JoinText.Position = UDim2.new(0, 0, 0.453551859, 0)
 JoinText.Size = UDim2.new(0.998024881, 0, 0.146612123, 0)
 JoinText.Font = Enum.Font.GothamBold
-JoinText.Text = "加入q群258231844查看更多汉化脚本"
+JoinText.Text = "加入Jay脚本"
 JoinText.TextColor3 = Color3.new(1, 1, 1)
 JoinText.TextSize = 17
  
@@ -234,7 +234,7 @@ DiscordlinkTest.BackgroundTransparency = 1
 DiscordlinkTest.Position = UDim2.new(0, 0, 0.601092875, 0)
 DiscordlinkTest.Size = UDim2.new(0.998024881, 0, 0.146612123, 0)
 DiscordlinkTest.Font = Enum.Font.GothamBold
-DiscordlinkTest.Text = "q群：258231844"
+DiscordlinkTest.Text = "q群：658751343"
 DiscordlinkTest.TextColor3 = Color3.new(1, 1, 1)
 DiscordlinkTest.TextSize = 17
  
@@ -1457,7 +1457,7 @@ Createtitle2.BackgroundColor3 = Color3.new(1, 1, 1)
 Createtitle2.BackgroundTransparency = 1
 Createtitle2.Size = UDim2.new(0, 108, 0, 25)
 Createtitle2.Font = Enum.Font.GothamBlack
-Createtitle2.Text = "ato汉化脚本"
+Createtitle2.Text = "Jay蜂群脚本"
 Createtitle2.TextColor3 = Color3.new(1, 1, 1)
 Createtitle2.TextSize = 14
  
@@ -1481,7 +1481,7 @@ Welcome.BackgroundTransparency = 1
 Welcome.Position = UDim2.new(0, 0, 0.313432842, 0)
 Welcome.Size = UDim2.new(0, 266, 0, 50)
 Welcome.Font = Enum.Font.GothamBold
-Welcome.Text = "欢迎使用ato汉化的脚本"
+Welcome.Text = "欢迎使用Jay的脚本"
 Welcome.TextColor3 = Color3.new(1, 1, 1)
 Welcome.TextSize = 25
 Welcome.TextWrapped = true
@@ -3417,4 +3417,5 @@ else
 afksnail = false
 Killstumnail.BackgroundColor3 = blue
 end
+
 end)
