@@ -368,15 +368,15 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-    Name = "🏳️‍🌈极速",
+    Name = "战争大亨",
     Icon = "rbxassetid://7734068321",
     PremiumOnly = false
 })
 
 Tab:AddButton({
-  Name = "1-会覆盖",
+  Name = "？",
   Callback = function()
-    loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56\37\69\56\37\66\53\37\66\55\46\108\117\97'))()
+loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\111\121\115\99\112\47\98\101\116\97\47\109\97\105\110\47\37\69\57\37\56\48\37\57\70\37\69\53\37\66\65\37\65\54\37\69\55\37\56\50\37\66\56））
   end
 })
 
@@ -532,7 +532,7 @@ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\
 })
 
 local player = Window:MakeTab({
-	Name = "🔪杀手vs警长👩‍✈️",
+	Name = "被遗弃",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -540,7 +540,7 @@ local player = Window:MakeTab({
 player:AddButton({ 
 	Name = "1",
 	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0murder", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0murder", true))()
   	end
 })
 local player = Window:MakeTab({
