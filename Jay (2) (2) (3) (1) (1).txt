@@ -258,9 +258,9 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-  Name = "hua-自然灾害",
+  Name = "自然灾害黑洞V6",
   Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/5fKvum70"))()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Super-ring-Parts-V6-28581"))()
   end
 })
 
