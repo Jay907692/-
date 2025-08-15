@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))();
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
-local Window = OrionLib:MakeWindow({Name = "Jay脚本1.2", HidePremium = false, SaveConfig = false, IntroText = "JAY", ConfigFolder = "不喜勿喷，缝合脚本"})
+local Window = OrionLib:MakeWindow({Name = "Jay脚本1.36", HidePremium = false, SaveConfig = false, IntroText = "JAY", ConfigFolder = "不喜勿喷，缝合脚本"})
 
 local Tab = Window:MakeTab({
     Name = "Jay脚本",
@@ -311,21 +311,18 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-    Name = "🐲指令脚本🐲",
+    Name = "🐲XA脚本🐲",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/refs/heads/main/Games/%E4%BF%84%E4%BA%A5%E4%BF%84%E5%B7%9E.lua"))()
     end
 })
 
-Tab:AddLabel("指令如下（聊天框输入）")
-Tab:AddLabel("透开-透关 ---透视")
-Tab:AddLabel("追踪开-追踪关 ---子弹追踪")
-Tab:AddLabel("收钱开-收钱关 ---收集钱包")
-Tab:AddLabel("收物开-收物关 ---收集物品")
-Tab:AddLabel("抢取款机开-抢取款机关")
-Tab:AddLabel("抢银行开-抢银行关")
-Tab:AddLabel("穿墙开-穿墙关")
-Tab:AddLabel("拳击光环开-拳击光环关")
+Tab:AddButton({
+    Name = "snow脚本",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/canxiaoxue666/String/refs/heads/main/OhioScript"))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "巴掌大战👋",
