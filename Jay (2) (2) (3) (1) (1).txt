@@ -291,6 +291,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/he
 })
 
 Tab:AddButton({
+  Name = "无限侧翻英文脚本",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()
+  end
+})
+
+Tab:AddButton({
    Name = "英文最强战场",
    Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Tsb-Movesets-Hub-45038"))()
