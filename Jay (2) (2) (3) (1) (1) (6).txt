@@ -355,15 +355,15 @@ Tab:AddLabel("全开功能有:防编辑，防毒液，防黑洞，防死神")
 Tab:AddLabel("防雷神，防rob，防秒杀手套，管理员预警，防踢")
 
 local Tab = Window:MakeTab({
-    Name = "✨忍者✨",
+    Name = "被遗弃",
     Icon = "rbxassetid://7734068321",
     PremiumOnly = false
 })
 
 Tab:AddButton({
-    Name = "1",
+    Name = "XaHUB",
     Callback = function()
-    pcall(loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")))
+loadstring(game:HttpGet"https://raw.githubusercontent.com/OWOWOWWOW/HTT/main/HT.lua")()
     end
 })
 
