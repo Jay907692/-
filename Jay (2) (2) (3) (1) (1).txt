@@ -652,9 +652,9 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "🌞神光脚本🌞",
+    Name = "凛冬脚本",
     Callback = function()
-    loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,56,102,50,76,99,113,113,80})end)())))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mciklw/mciklwscript/refs/heads/main/lindongzx"))()
     end
 })
 
