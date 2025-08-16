@@ -232,15 +232,15 @@ player:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "小黑子",
+	Name = "BF",
 	Icon = "rbxassetid://7734068321",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-  Name = "1",
+  Name = "Jay英文bf",
   Callback = function()
-    loadstring(game:HttpGet(('https://gist.githubusercontent.com/blox-hub-roblox/021bad62bbc6a0adc4ba4e625f9ad7df/raw/c89af6e1acf587d09e4ce4bc7510e7100e0c0065/swordWarrior.lua'),true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
   end
 })
 
