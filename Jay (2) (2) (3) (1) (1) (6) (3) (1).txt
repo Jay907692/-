@@ -498,15 +498,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/shenq
 })
 
 local player = Window:MakeTab({
-	Name = "👊最强拳击模拟器👊",
+	Name = "👊BF👊",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 player:AddButton({ 
-	Name = "1",
+	Name = "redz需要解卡",
 	Callback = function()
-      	loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/Master.lua'))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
   	end
 })
 
