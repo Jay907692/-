@@ -40,9 +40,9 @@ end
 })    
 
 Tab:AddButton({
-  Name = "旋转（暂不可用）",
+  Name = "甩飞",
   Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/qjaj/5c58ab5e958d9ebb81612af4b99cd20e4ec696c7/%E7%94%A9%E4%BA%BA%20(1).txt"))()
   end
 })
 
