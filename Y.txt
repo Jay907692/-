@@ -38,35 +38,35 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Y脚本"; Text ="启动中"; Duration = 2; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "JAY脚本"; Text ="启动中"; Duration = 2; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "正在加载"; Text ="启动完毕"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "防踢出正在加载"; Text ="加载完毕"; Duration = 4; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/whenheer/hhi/refs/heads/main/%E5%A4%A7%E5%8F%B8%E9%A9%AC%E8%84%9A%E6%9C%AC%E4%B8%AD%E5%BF%83ui%E6%9C%80%E6%96%B0%E7%89%88.lua"))();        
-local win = ui:new("Y脚本中心")
+local win = ui:new("Jay脚本1.5")
 --
-local UITab1 = win:Tab("『信息』",'7734068321')
+local UITab1 = win:Tab("『信息』",'88598122965543')
 
 local about = UITab1:section("『作者信息』",false)
 
-about:Label("Y脚本")
-about:Label("作者：Y")
-about:Label("qq群1055935003")
-about:Label("师傅KE")
+about:Label("Jay脚本")
+about:Label("禁止倒卖")
+about:Label("qq群658751343")
 about:Label("感谢使用")
 
 local about = UITab1:section("『玩家信息』",false)
 
 about:Label("你现在的服务器id:"..game.GameId)
 
-local UITab2 = win:Tab("『公告』",'7734068321')
+local UITab2 = win:Tab("『公告』",'88598122965543')
 
 local about = UITab2:section("『公告』",true)
 
-about:Label("感谢支持Y脚本的人")
-about:Label("已修复完bug")
+about:Label("感谢支持Jay脚本的人")
+about:Label("已更新1.5")
 about:Label("有问题反馈到群")
 
-local UITab4 = win:Tab("『加入服务器』",'16060333448')
+local UITab4 = win:Tab("『加入服务器』",'96053471887671')
 
 local about = UITab4:section("『加入服务器』",false)
 
@@ -118,15 +118,15 @@ local game_id = 3398014311
         game:GetService("TeleportService"):Teleport(game_id, game.Players.LocalPlayer)
 end)
     
-local UITab5 = win:Tab("『复制栏』",'16060333448')
+local UITab5 = win:Tab("『复制栏』",'96053471887671')
 
 local about = UITab5:section("『复制』",false)
 
-    about:Button("点我复制Y脚本交流主群",function()
-    setclipboard("794818500")
+    about:Button("点我复制Jay脚本交流主群",function()
+    setclipboard("658751343")
 end)
 
-local UITab6 = win:Tab("『人物』",'16060333448')
+local UITab6 = win:Tab("『人物』",'96053471887671')
 
 local about = UITab6:section("『人物』",false)
 
@@ -154,7 +154,7 @@ about:Button("爬墙",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 end)
 
-local UITab6 = win:Tab("『通用』",'16060333448')
+local UITab6 = win:Tab("『通用』",'96053471887671')
 
 local about = UITab6:section("『通用』",false)
 
@@ -181,9 +181,9 @@ about:Button("传送到玩家旁边", function()
     local tp_player = game.Players:FindFirstChild(playernamedied)
     if tp_player and tp_player.Character and tp_player.Character.HumanoidRootPart then
         HumRoot.CFrame = tp_player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
-        Notify("Y脚本", "已经传送到玩家身边", "rbxassetid://", 5)
+        Notify("Jay脚本", "已经传送到玩家身边", "rbxassetid://", 5)
     else
-        Notify("Y脚本", "无法传送 玩家已消失", "rbxassetid://", 5)
+        Notify("Jay脚本", "无法传送 玩家已消失", "rbxassetid://", 5)
     end
 end)
 
@@ -374,7 +374,7 @@ about:Button("汉化穿墙",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
 end)
 
-local UITab1 = win:Tab("『doors』",'16060333448')
+local UITab1 = win:Tab("『doors』",'96053471887671')
 
 local about = UITab1:section("『doors』",false)
 
@@ -382,7 +382,7 @@ about:Button("doies",function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
 end)
 
-local UITab26 = win:Tab("『自然灾害模拟器』",'7734068321')
+local UITab26 = win:Tab("『自然灾害模拟器』",'88598122965543')
 
 local about = UITab26:section("『自然灾害模拟器』",true)
 
@@ -608,7 +608,7 @@ about:Button("自然灾害模拟器3",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()
 end)
 
-local UITab3 = win:Tab("『压力』",'16060333448')
+local UITab3 = win:Tab("『压力』",'96053471887671')
 
 local about = UITab3:section("『压力』",false)
 
@@ -616,7 +616,7 @@ about:Button("压力",function()
     loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
 end)
 
-local UITab4 = win:Tab("『死铁轨』",'16060333448')
+local UITab4 = win:Tab("『死铁轨』",'96053471887671')
 
 local about = UITab4:section("『死铁轨』",false)
 
@@ -624,7 +624,7 @@ about:Button("死铁轨",function()
     getgenv().AutoExecute = true(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/hungquan99/HungHUB/main/loader.lua"))()
 end)
 
-local UITab5 = win:Tab("『战争』",'16060333448')
+local UITab5 = win:Tab("『战争』",'96053471887671')
 
 local about = UITab5:section("『战争』",false)
 
@@ -660,7 +660,7 @@ about:Button("战争大亨7",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/megamoeus/UI-Engine-V2/main/OWTPublic"))()
 end)
 
-local UITab6 = win:Tab("『活到7天』",'16060333448')
+local UITab6 = win:Tab("『活到7天』",'96053471887671')
 
 local about = UITab6:section("『活到7天』",false)
 
@@ -668,7 +668,7 @@ about:Button("活到7天",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Finaloutcome/7day/refs/heads/main/1222.lua'))()
 end)
 
-local UITab7 = win:Tab("『力量』",'16060333448')
+local UITab7 = win:Tab("『力量』",'96053471887671')
 
 local about = UITab7:section("『力量』",false)
 
@@ -782,7 +782,7 @@ about:Button("力量传奇改力量",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
 end)
 
-local UITab8 = win:Tab("『99夜』",'16060333448')
+local UITab8 = win:Tab("『99夜』",'96053471887671')
 
 local about = UITab8:section("『99夜』",false)
 
@@ -790,7 +790,7 @@ about:Button("99夜",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/shenqin/refs/heads/main/99day.lua"))()
 end)
 
-local UITab9 = win:Tab("『忍者』",'16060333448')
+local UITab9 = win:Tab("『忍者』",'96053471887671')
 
 local about = UITab9:section("『忍者』",false)
 
@@ -822,7 +822,7 @@ about:Button("忍者传奇4",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Zyb150933/zyb/main/123'))()
 end)
 
-local UITab10 = win:Tab("『黑火药』",'16060333448')
+local UITab10 = win:Tab("『黑火药』",'96053471887671')
 
 local about = UITab10:section("『黑火药』",false)
 
@@ -830,7 +830,7 @@ about:Button("黑火药",function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\97\112\112\47\65\51\78\113\122\52\78\112\47\114\97\119"))()
 end)
 
-local UITab11 = win:Tab("『俄亥』",'16060333448')
+local UITab11 = win:Tab("『俄亥』",'96053471887671')
 
 local about = UITab11:section("『俄亥』",false)
 
@@ -866,7 +866,7 @@ about:Button("指令",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
 end)
 
-local UITab12 = win:Tab("『被遗弃』",'16060333448')
+local UITab12 = win:Tab("『被遗弃』",'96053471887671')
 
 local about = UITab12:section("『被遗弃』",false)
 
@@ -874,7 +874,7 @@ about:Button("被遗弃",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/JackUltraman/fish/refs/heads/main/%E8%A2%AB%E9%81%97%E5%BC%83"))()
 end)
 
-local UITab13 = win:Tab("『偷走脑红』",'16060333448')
+local UITab13 = win:Tab("『偷走脑红』",'96053471887671')
 
 local about = UITab13:section("『偷走脑红』",false)
 
@@ -882,7 +882,7 @@ about:Button("偷走脑红",function()
     loadstring(game:HttpGet('https://pastefy.app/OQlP0ynZ/raw'))()
 end)
 
-local UITab14 = win:Tab("『伐木』",'16060333448')
+local UITab14 = win:Tab("『伐木』",'96053471887671')
 
 local about = UITab14:section("『伐木』",false)
 
@@ -898,7 +898,7 @@ about:Button("伐木3",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0'))("")
 end)
 
-local UITab15 = win:Tab("『种植花园』",'16060333448')
+local UITab15 = win:Tab("『种植花园』",'96053471887671')
 
 local about = UITab15:section("『种植花园』",false)
 
@@ -906,7 +906,7 @@ about:Button("种植花园",function()
     loadstring(game:HttpGet("https://pastefy.app/eUAzqoCL/raw"))()
 end)
 
-local UITab16 = win:Tab("『犯罪』",'16060333448')
+local UITab16 = win:Tab("『犯罪』",'96053471887671')
 
 local about = UITab16:section("『犯罪』",false)
 
@@ -914,7 +914,7 @@ about:Button("犯罪",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/dementiaenjoyer/homohack/main/loader.lua"))()
 end)
 
-local UITab17 = win:Tab("『偷走一条鱼』",'16060333448')
+local UITab17 = win:Tab("『偷走一条鱼』",'96053471887671')
 
 local about = UITab17:section("『偷走一条鱼』",false)
 
@@ -922,7 +922,7 @@ about:Button("偷走一条鱼",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/c6gQj1eR"))()
 end)
 
-local UITab18 = win:Tab("『传奇』",'16060333448')
+local UITab18 = win:Tab("『传奇』",'96053471887671')
 
 local about = UITab18:section("『传奇』",false)
 
@@ -930,7 +930,7 @@ about:Button("传奇",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/HUBH/refs/heads/main/HittaH.lua"))()
 end)
 
-local UITab20 = win:Tab("『51区』",'7734068321')
+local UITab20 = win:Tab("『51区』",'88598122965543')
 
 local about = UITab20:section("『51区』",false)
 
@@ -938,7 +938,7 @@ about:Button("51区  1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51", true))()
 end)
 
-local UITab21 = win:Tab("『短信模拟器』",'7734068321')
+local UITab21 = win:Tab("『短信模拟器』",'88598122965543')
 
 local about = UITab21:section("『短信模拟器』",false)
 
@@ -946,7 +946,7 @@ about:Button("短信模拟器1",function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/9hxkxUZ5'),false))()
 end)
 
-local UITab22 = win:Tab("『克隆大亨』",'7734068321')
+local UITab22 = win:Tab("『克隆大亨』",'88598122965543')
 
 local about = UITab22:section("『克隆大亨』",false)
 
@@ -954,7 +954,7 @@ about:Button("克隆大亨1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/RobloxStuff/main/CT-Destroyer"))()
 end)
 
-local UITab23 = win:Tab("『刀刃球』",'7734068321')
+local UITab23 = win:Tab("『刀刃球』",'88598122965543')
 
 local about = UITab23:section("『刀刃球』",false)
 
@@ -978,7 +978,7 @@ about:Button("刀刃球3",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Neoncat765/Neon.C-Hub-X/main/UnknownVersion"))()
 end)
 
-local UITab24 = win:Tab("『战斗勇士』",'7734068321')
+local UITab24 = win:Tab("『战斗勇士』",'88598122965543')
 
 local about = UITab24:section("『战斗勇士』",false)
 
@@ -990,7 +990,7 @@ about:Button("战斗勇士2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))()
 end)
 
-local UITab25 = win:Tab("『背上只因剑』",'7734068321')
+local UITab25 = win:Tab("『背上只因剑』",'88598122965543')
 
 local about = UITab25:section("『背上只因剑』",false)
 
@@ -1002,7 +1002,7 @@ about:Button("背上只因剑2",function()
 loadstring(game:HttpGet(('https://gist.githubusercontent.com/blox-hub-roblox/021bad62bbc6a0adc4ba4e625f9ad7df/raw/c89af6e1acf587d09e4ce4bc7510e7100e0c0065/swordWarrior.lua'),true))()
 end)
 
-local UITab26 = win:Tab("『彩虹朋友』",'7734068321')
+local UITab26 = win:Tab("『彩虹朋友』",'88598122965543')
 
 local about = UITab26:section("『彩虹朋友』",false)
 
@@ -1014,7 +1014,7 @@ about:Button("彩虹朋友2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
 end)
 
-local UITab27 = win:Tab("『格林威尔』",'16060333448')
+local UITab27 = win:Tab("『格林威尔』",'96053471887671')
 local about = UITab27:section("『格林威尔』",false)
 
 about:Button("格林维尔",function()
@@ -1029,7 +1029,7 @@ about:Button("格林维尔3",function()
     loadstring(game:HttpGet("https://pastefy.app/WBYAsWJm/raw"))()
 end)
 
-local UITab28 = win:Tab("『CDID』",'16060333448')
+local UITab28 = win:Tab("『CDID』",'96053471887671')
 
 local about = UITab28:section("『CDID』",false)
 
@@ -1041,7 +1041,7 @@ about:Button("cdid2",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/imkindagoodngl/Script/refs/heads/main/CDID.lua"))()
 end)
 
-local UITab29 = win:Tab("『degp』",'16060333448')
+local UITab29 = win:Tab("『degp』",'96053471887671')
 
 local about = UITab29:section("『degp』",false)
 
@@ -1049,7 +1049,7 @@ about:Button("degp",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/refs/heads/ok/dejp"))()
 end)
 
-local UITab30 = win:Tab("『墨水』",'16060333448')
+local UITab30 = win:Tab("『墨水』",'96053471887671')
 
 local about = UITab30:section("『墨水』",false)
 
@@ -1061,7 +1061,7 @@ about:Button("墨水2",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XOTRXONY/INKGAME/main/INKGAMEE.lua", true))()
 end)
 
-local UITab31 = win:Tab("『极速』",'16060333448')
+local UITab31 = win:Tab("『极速』",'96053471887671')
 local about = UITab31:section("『极速』",false)
 
 about:Button("极速1",function()
@@ -1072,7 +1072,7 @@ about:Button("极速2",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/9KWQXasx"))()
 end)
 
-local UITab32 = win:Tab("『cw』",'16060333448')
+local UITab32 = win:Tab("『cw』",'96053471887671')
 
 local about = UITab32:section("『cw』",false)
 
@@ -1080,7 +1080,7 @@ about:Button("CW",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaaaKK/cwhb/main/cw.txt"))()
 end)
 
-local UITab33 = win:Tab("『唐县』",'16060333448')
+local UITab33 = win:Tab("『唐县』",'96053471887671')
 
 local about = UITab33:section("『唐县』",false)
 
@@ -1088,7 +1088,7 @@ about:Button("唐县",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/YE%20SCRIPT-Tang%20County%2C%20Hebei.lua"))()
 end)
 
-local UITab34 = win:Tab("『巴掌』",'16060333448')
+local UITab34 = win:Tab("『巴掌』",'96053471887671')
 
 local about = UITab34:section("『巴掌』",false)
 
@@ -1096,7 +1096,7 @@ about:Button("巴掌",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
 end)
 
-local UITab35 = win:Tab("『蜂群』",'16060333448')
+local UITab35 = win:Tab("『蜂群』",'96053471887671')
 
 local about = UITab35:section("『蜂群』",false)
 
@@ -1104,7 +1104,7 @@ about:Button("蜂群",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/PrisonLife-Gui-V1/main/PrisonLifeGuiV1"))()
 end)
 
-local UITab36 = win:Tab("『火箭』",'16060333448')
+local UITab36 = win:Tab("『火箭』",'96053471887671')
 
 local about = UITab36:section("『火箭』",false)
 
@@ -1112,7 +1112,7 @@ about:Button("火箭",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/anlushanjinchangantangwanle/refs/heads/main/jmjmjmjmjmjm114514.txt"))()
  end)
 
-local UITab37 = win:Tab("『汽车经售』",'16060333448')
+local UITab37 = win:Tab("『汽车经售』",'96053471887671')
 
 local about = UITab37:section("『汽车经售』",false)
 
@@ -1120,7 +1120,7 @@ about:Button("汽车经售",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/BlueLockSeason2/main/README.md"))()
 end)
 
-local UITab38 = win:Tab("『杀手与警长』",'7734068321')
+local UITab38 = win:Tab("『杀手与警长』",'88598122965543')
 
 local about = UITab38:section("『杀手与警长』",false)
 
@@ -1132,7 +1132,7 @@ about:Button("杀手与警长秒杀",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/murdersvssherrifsduels/main/rubyhub", true))()
 end)
 
-local UITab39 = win:Tab("『监狱人生』",'7734068321')
+local UITab39 = win:Tab("『监狱人生』",'88598122965543')
 
 local about = UITab39:section("『传送』",false)
 
@@ -1211,7 +1211,7 @@ about:Button("监狱人生汉化",function()
 loadstring(game:HttpGetAsync("https://pastebin.com/raw/fYMnAEeJ"))()
 end)
 
-local UITab40 = win:Tab("『FE』",'7734068321')
+local UITab40 = win:Tab("『FE』",'88598122965543')
 
 local about = UITab40:section("『FE』",false)
 
@@ -1258,7 +1258,7 @@ about:Button("FE", function()
     loadstring(game:HttpGet('https://pastefy.ga/a7RTi4un/raw'))()
 end)
 
-local UITab41 = win:Tab("『死亡球』",'7734068321')
+local UITab41 = win:Tab("『死亡球』",'88598122965543')
 
 local about = UITab41:section("『死亡球』",false)
 
@@ -1270,7 +1270,7 @@ about:Button("死亡球2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Ball1/main/Death"))()
 end)
 
-local UITab42 = win:Tab("『感染性微笑』",'7734068321')
+local UITab42 = win:Tab("『感染性微笑』",'88598122965543')
 
 local about = UITab42:section("『感染性微笑』",false)
 
@@ -1282,7 +1282,7 @@ about:Button("感染性微笑2",function()
 loadstring(game:HttpGet(("https://pastebin.com/raw/mT10xnt7"), true))()
 end)
 
-local UITab43 = win:Tab("『铲雪模拟器』",'7734068321')
+local UITab43 = win:Tab("『铲雪模拟器』",'88598122965543')
 
 local about = UITab43:section("『铲雪模拟器』",false)
 
@@ -1339,7 +1339,7 @@ about:Toggle("自动收集雪","", false, function(Value)
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-391.4309997558594, 15.84949016571045, 150.15187072753906)
     end)
    
-local UITab43 = win:Tab("『一个普通的露营故事』",'7734068321')
+local UITab43 = win:Tab("『一个普通的露营故事』",'88598122965543')
 
 local about = UITab43:section("『一个普通的露营故事』",false)
 
@@ -1347,7 +1347,7 @@ about:Button("飞行",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/brP8SAfJ"))()
 end)
 
-local UITab44 = win:Tab("无名射手",'7734068321')
+local UITab44 = win:Tab("无名射手",'88598122965543')
 
 local about = UITab44:section("『无名射手』",false)
 
@@ -1355,7 +1355,7 @@ about:Button("无名射手",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/R1nn1/MainMenu1/main/MainMenuV1.2"))()
 end)
 
-local UITab45 = win:Tab("『骨折VI』",'7734068321')
+local UITab45 = win:Tab("『骨折VI』",'88598122965543')
 
 local about = UITab45:section("『骨折VI』",false)
 
@@ -1363,7 +1363,7 @@ about:Button("骨折VI  1",function()
 loadstring(game:HttpGet('https://pastebin.com/raw/5rEAVmcC'))()
 end)
 
-local UITab46 = win:Tab("『其他作者』",'7734068321')
+local UITab46 = win:Tab("『其他作者』",'88598122965543')
 
 local about = UITab46:section("『其他作者』",false)
 
@@ -1419,7 +1419,7 @@ about:Button("雷脚本",function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/tPB47inG')))()
 end)
 
-local UITab47 = win:Tab("『小偷模拟器』",'7734068321')
+local UITab47 = win:Tab("『小偷模拟器』",'88598122965543')
 
 local about = UITab47:section("『小偷模拟器』",false)
 
@@ -1427,7 +1427,7 @@ about:Button("小偷模拟器",function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/adrician/Thief-Simulator---GUI/main/Thief%20sim.lua"),true))()
 end)
 
-local UITab48 = win:Tab("『寻宝模拟器』",'7734068321')
+local UITab48 = win:Tab("『寻宝模拟器』",'88598122965543')
 
 local about = UITab48:section("『寻宝模拟器』",false)
 
@@ -1435,7 +1435,7 @@ about:Button("寻宝模拟器",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/gghb/main/%E4%B8%81%E4%B8%81%E5%AF%BB%E5%AE%9D.txt"))()
 end)
 
-local UITab49 = win:Tab("『法宝模拟器』",'7734068321')
+local UITab49 = win:Tab("『法宝模拟器』",'88598122965543')
 
 local about = UITab49:section("『法宝模拟器』",false)
 
@@ -1447,7 +1447,7 @@ about:Button("法宝模拟器",function()
 loadstring(game:HttpGet("https://pastefy.app/9bGpv4H3/raw"))()
 end)
 
-local UITab49 = win:Tab("『法宝模拟器』",'7734068321')
+local UITab49 = win:Tab("『法宝模拟器』",'88598122965543')
 
 local about = UITab21:section("『法宝模拟器』",false)
 
@@ -1459,7 +1459,7 @@ about:Button("法宝模拟器",function()
 loadstring(game:HttpGet("https://pastefy.app/9bGpv4H3/raw"))()
 end)
 
-local UITab50 = win:Tab("『一路向西』",'7734068321')
+local UITab50 = win:Tab("『一路向西』",'88598122965543')
 
 local about = UITab50:section("『一路向西』",false)
 
@@ -1471,7 +1471,7 @@ about:Button("一路向西2",function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Drifter0507/scripts/main/westbound"),true))()
 end)
 
-local UITab51 = win:Tab("『餐厅大亨』",'7734068321')
+local UITab51 = win:Tab("『餐厅大亨』",'88598122965543')
 
 local about = UITab51:section("『餐厅大亨』",false)
 
@@ -1483,7 +1483,7 @@ about:Button("餐厅大亨2",function()
 loadstring(game:HttpGet("https://pastefy.app/Ppqt0Gib/raw"))()
 end)
 
-local UITab52 = win:Tab("『模仿者』",'7734068321')
+local UITab52 = win:Tab("『模仿者』",'88598122965543')
 
 local about = UITab52:section("『模仿者』",false)
 
@@ -1491,7 +1491,7 @@ about:Button("模仿者1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
 end)
 
-local UITab53 = win:Tab("『进击的僵尸』",'7734068321')
+local UITab53 = win:Tab("『进击的僵尸』",'88598122965543')
 
 local about = UITab53:section("『进击的僵尸』",false)
 
@@ -1503,7 +1503,7 @@ about:Button("自瞄",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
 end)
 
-local UITab54 = win:Tab("『兵工厂』",'7734068321')
+local UITab54 = win:Tab("『兵工厂』",'88598122965543')
 
 local about = UITab54:section("『兵工厂』",false)
 
@@ -1523,7 +1523,7 @@ about:Button("兵工厂4",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
 end)
 
-local UITab55 = win:Tab("『超级足球联赛』",'7734068321')
+local UITab55 = win:Tab("『超级足球联赛』",'88598122965543')
 
 local about = UITab55:section("『超级足球联赛』",false)
 
@@ -1535,7 +1535,7 @@ about:Button("超级足球联赛2",function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8fdf7c482d3b3d108ccdb282a7fc35e2.lua"))()
 end)
 
-local UITab56 = win:Tab("『钓鱼模拟器』",'7734068321')
+local UITab56 = win:Tab("『钓鱼模拟器』",'88598122965543')
 
 local about = UITab56:section("『钓鱼模拟器』",false)
 
@@ -1551,7 +1551,7 @@ about:Button("钓鱼模拟器2",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/reddythedev/Reddy-Hub/main/_Loader'))()
 end)
 
-local UITab57 = win:Tab("『动感星期五』",'7734068321')
+local UITab57 = win:Tab("『动感星期五』",'88598122965543')
 
 local about = UITab57:section("『动感星期五』",false)
 
@@ -1575,7 +1575,7 @@ about:Button("动感星期五自动PK",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 end)
 
-local UITab58 = win:Tab("『剑斗士模拟器』",'7734068321')
+local UITab58 = win:Tab("『剑斗士模拟器』",'88598122965543')
 
 local about = UITab58:section("『剑斗士模拟器』",false)
 
@@ -1583,7 +1583,7 @@ about:Button("剑斗士模拟器",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/DisticHub/main/Loader.lua"))()
 end)
 
-local UITab59 = win:Tab("『挖到中国』",'16060333448')
+local UITab59 = win:Tab("『挖到中国』",'96053471887671')
 
 local about = UITab59:section("『挖到中国』",false)
 
@@ -1591,7 +1591,7 @@ about:Button("远程购买炸弹",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/wachuzhongguo/refs/heads/main/jm%E6%8C%96%E5%88%B0%E4%B8%AD%E5%9B%BD%E8%BF%9C%E7%A8%8B%E8%B4%AD%E4%B9%B0%E7%82%B8%E5%BC%B9.lua"))()
 end)
 
-local UITab60 = win:Tab("『起床战争』",'16060333448')
+local UITab60 = win:Tab("『起床战争』",'96053471887671')
 
 local about = UITab60:section("『起床战争』",false)
 
@@ -1603,7 +1603,7 @@ about:Button("起床战争",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/OWJBWKQLAISH/Inferno-X/main/inferno%20X%20V2"))()
 end)
 
-local UITab61 = win:Tab("『驾驶帝国』",'7734068321')
+local UITab61 = win:Tab("『驾驶帝国』",'88598122965543')
 
 local about = UITab61:section("『驾驶帝国』",false)
 
@@ -1623,7 +1623,7 @@ about:Button("驾驶帝国NEO",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/Lightux/main/README.md'),true))()
 end)
 
-local UITab61 = win:Tab("『鲨口求生』",'7734068321')
+local UITab61 = win:Tab("『鲨口求生』",'88598122965543')
 
 local about = UITab61:section("『鲨口求生』",false)
 
@@ -1647,7 +1647,7 @@ about:Button("鲨口求生刷船",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/ghostapustaja/legionhub/main/sharkbite2'),true))()
 end)
 
-local UITab54 = win:Tab("『飞行比赛』",'7734068321')
+local UITab54 = win:Tab("『飞行比赛』",'88598122965543')
 
 local about = UITab54:section("『飞行比赛』",true)
 
@@ -1655,7 +1655,7 @@ about:Button("飞行比赛1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NightCoded/script/main/fly-race.lua"))()
 end)
 
-local UITab48 = win:Tab("『EVAde  大逃脱』",'7734068321')
+local UITab48 = win:Tab("『EVAde  大逃脱』",'88598122965543')
 
 local about = UITab48:section("『EVAde  大逃脱』",true)
 
@@ -1667,7 +1667,7 @@ about:Button("大逃脱2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/%E4%BA%91%E8%84%9A%E6%9C%ACEvade.lua"))()
 end)
 
-local UITab49 = win:Tab("『国王遗产』",'7734068321')
+local UITab49 = win:Tab("『国王遗产』",'88598122965543')
 
 local about = UITab49:section("『国王遗产』",true)
 
@@ -1691,7 +1691,7 @@ about:Button("国王遗产5",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xOne2/King-Legacy/main/README.md"))()
 end)
 
-local UITab7 = win:Tab("『死亡球』",'7734068321')
+local UITab7 = win:Tab("『死亡球』",'88598122965543')
 
 local about = UITab7:section("『死亡球』",true)
 
@@ -1703,7 +1703,7 @@ about:Button("死亡球2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Ball1/main/Death"))()
 end)
 
-local UITab69 = win:Tab("『狂野西部』",'7734068321')
+local UITab69 = win:Tab("『狂野西部』",'88598122965543')
 
 local about = UITab69:section("『狂野西部』",true)
 
@@ -1711,7 +1711,7 @@ about:Button("狂野西部",function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/KeoneGithub/KeoneGithub/main/WildWestLean"),true))()
 end)
 
-local UITab1 = win:Tab("『超级大力士模拟器』",'7734068321')
+local UITab1 = win:Tab("『超级大力士模拟器』",'88598122965543')
 
 local about = UITab1:section("『超级大力士模拟器』",true)
 
@@ -1823,7 +1823,7 @@ about:Button("超级大力士模拟器4",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
 end)
 
-local UITab9 = win:Tab("『俄亥俄州』",'7734068321')
+local UITab9 = win:Tab("『俄亥俄州』",'88598122965543')
 
 local about = UITab9:section("『俄亥俄州』",true)
 
