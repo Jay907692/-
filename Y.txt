@@ -826,8 +826,8 @@ local UITab10 = win:Tab("『黑火药』",'96053471887671')
 
 local about = UITab10:section("『黑火药』",false)
 
-about:Button("黑火药",function()
-    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\97\112\112\47\65\51\78\113\122\52\78\112\47\114\97\119"))()
+about:Button("jay汉化黑火药",function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\34\104\116\116\112\115\58\47\47\102\114\101\101\110\111\116\101\46\98\105\122\47\114\97\119\47\109\117\122\110\104\101\114\104\114\117\34\41\44\116\114\117\101\41\41\40\41\10")()
 end)
 
 local UITab11 = win:Tab("『俄亥』",'96053471887671')
@@ -838,11 +838,11 @@ about:Button("俄亥俄州1英",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
 end)
 
-about:Button("俄亥俄州",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
+about:Button("俄亥俄州XA",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/refs/heads/main/Games/%E4%BF%84%E4%BA%A5%E4%BF%84%E5%B7%9E.lua"))()
 end)
 
-about:Button("俄亥俄州2英",function()
+about:Button("俄亥俄州SONW",function()
 loadstring(game:HttpGet('https://pastebin.com/raw/MyfCUnGK'))()
 end)
 
