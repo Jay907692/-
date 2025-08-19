@@ -843,7 +843,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/re
 end)
 
 about:Button("俄亥俄州SONW",function()
-loadstring(game:HttpGet('https://pastebin.com/raw/MyfCUnGK'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/canxiaoxue666/String/refs/heads/main/OhioScript"))()
 end)
 
 about:Button("俄亥俄州3",function()
@@ -870,8 +870,8 @@ local UITab12 = win:Tab("『被遗弃』",'96053471887671')
 
 local about = UITab12:section("『被遗弃』",false)
 
-about:Button("被遗弃",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/JackUltraman/fish/refs/heads/main/%E8%A2%AB%E9%81%97%E5%BC%83"))()
+about:Button("被遗弃Jay英文卡密在群公告",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BobJunior1/ForsakenBoi/refs/heads/main/B0bbyHub"))()
 end)
 
 local UITab13 = win:Tab("『偷走脑红』",'96053471887671')
@@ -1053,8 +1053,8 @@ local UITab30 = win:Tab("『墨水』",'96053471887671')
 
 local about = UITab30:section("『墨水』",false)
 
-about:Button("墨水1",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterVaz/InkGameAzure/main/Protected_7974105512464815.lua.txt"))()
+about:Button("墨水AX英文",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TexRBLX/Roblox-stuff/refs/heads/main/ink-game/script.lua"))()
 end)
 
 about:Button("墨水2",function()
