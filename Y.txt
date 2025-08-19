@@ -146,8 +146,8 @@ about:Slider('设置重力', 'Sliderflag', 196.2, 196.2, 1000,false, function(Va
         game.Workspace.Gravity = Value
     end)
 
-about:Button("替身",function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/SkrillexMe/SkrillexLoader/main/SkrillexLoadMain')))()
+about:Button("神秘快跑男egor",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/GBmWn4eZ", true))()
 end)
 
 about:Button("爬墙",function()
