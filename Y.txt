@@ -786,8 +786,8 @@ local UITab8 = win:Tab("『99夜』",'96053471887671')
 
 local about = UITab8:section("『99夜』",false)
 
-about:Button("99夜",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/shenqin/refs/heads/main/99day.lua"))()
+about:Button("二狗子超强99夜",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/shenqin/refs/heads/main/99day.lua"))()
 end)
 
 local UITab9 = win:Tab("『忍者』",'96053471887671')
@@ -1057,7 +1057,7 @@ about:Button("墨水AX英文",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TexRBLX/Roblox-stuff/refs/heads/main/ink-game/script.lua"))()
 end)
 
-about:Button("墨水2",function()
+about:Button("墨水AX翻译",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XOTRXONY/INKGAME/main/INKGAMEE.lua", true))()
 end)
 
@@ -1100,8 +1100,8 @@ local UITab35 = win:Tab("『蜂群』",'96053471887671')
 
 local about = UITab35:section("『蜂群』",false)
 
-about:Button("蜂群",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/PrisonLife-Gui-V1/main/PrisonLifeGuiV1"))()
+about:Button("Jay蜂群",function()
+
 end)
 
 local UITab36 = win:Tab("『火箭』",'96053471887671')
