@@ -481,8 +481,8 @@ end)
 
 about:Label("使用黑洞脚本3 刷取物品 手持物品 使用键盘E键 吸取物体")
 
-about:Button("黑洞脚本中心",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/Q1t1VkrL"))()
+about:Button("黑洞脚本V6",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Super-ring-Parts-V6-28581"))()
 end)
 
 about:Toggle("自动农场胜出", "ToggleInfo", false, function(bool)
@@ -620,8 +620,8 @@ local UITab4 = win:Tab("『死铁轨』",'96053471887671')
 
 local about = UITab4:section("『死铁轨』",false)
 
-about:Button("死铁轨",function()
-    getgenv().AutoExecute = true(loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/hungquan99/HungHUB/main/loader.lua"))()
+about:Button("死铁轨刷债券",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thantzy/thanhub/refs/heads/main/thanv1"))()
 end)
 
 local UITab5 = win:Tab("『战争』",'96053471887671')
