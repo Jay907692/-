@@ -352,8 +352,8 @@ about:Button("飞车",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/-V2.0/refs/heads/main/%E5%86%B7%E9%A3%9E%E8%BD%A6%E6%BA%90%E7%A0%81.txt"))()
 end)
 
-about:Button("飞行v1",function()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
+about:Button("飞行v3",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/Jay/8b94c47bd5969608438fa1ee57f34b1350789caa/飞行脚本", true))()
 end)
 
 local about = UITab6:section("『剩下懒得排了』",false)
@@ -371,7 +371,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/mai
 end)
 
 about:Button("汉化穿墙",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/Jay/bb90524a8140173dee6d3656c779785e5c4cfeeb/穿", true))()
 end)
 
 local UITab1 = win:Tab("『doors』",'96053471887671')
