@@ -359,8 +359,8 @@ end)
 
 local about = UITab6:section("『剩下懒得排了』",false)
 
-about:Button("反挂机v2",function()
-  loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
+about:Button("后门",function()
+  loadstring(game:HttpGet("https://rawscripts.net/raw/GAME-Backdoor-lalol-24947"))()
 end)
     
 about:Button("获得管理员权限",function()
