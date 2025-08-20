@@ -1837,65 +1837,22 @@ about:Button("超级大力士模拟器4",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
 end)
 
-local UITab9 = win:Tab("『俄亥俄州』",'88598122965543')
+local UITab9 = win:Tab("『最强战场』",'88598122965543')
 
-local about = UITab9:section("『俄亥俄州』",true)
+local about = UITab9:section("『最强战场』",true)
 
-about:Button("印钞机",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XTScripthub/Ohio/main/MoneyPrinterFinder"))()
+about:Button("最强战场中文",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/ZuiQiangZhanChang.lua"))()
 end)
 
-about:Button("传送加自动工作",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
+about:Button("最强战场无限侧翻",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/10tempest01/tempest-hub/refs/heads/main/Launcher.lua"))()
 end)
 
-about:Button("YFHUB[修复版 用的是云ui]",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/nb/main/jm1051.lua"))()
+about:Button("最强战场无CD秒杀",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/L7WEmRth"))()
 end)
 
-about:Button("杀戮光环",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/main/Games/Ohio"))()
+about:Button("Jay英文",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
 end)
-
-about:Button("死亡笔记",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0%20(1).txt"))()
-end)
-
-about:Button("俄亥俄州1英",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
-end)
-
-about:Button("俄亥俄州",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
-end)
-
-about:Button("俄亥俄州2英",function()
-loadstring(game:HttpGet('https://pastebin.com/raw/MyfCUnGK'))()
-end)
-
-about:Button("俄亥俄州3",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
-end)
-
-about:Button("俄亥俄州4",function()
-loadstring(game:HttpGet("https://pastefy.app/QbXPfsgC/raw"))()
-end)
-
-about:Button("俄亥俄州5",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
-end)
-
-about:Button("指令",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
-end)
-
-
-
-about:Label("在聊天框输入")
-about:Label("透开—透关")
-about:Label("追踪开—追踪关")
-about:Label("收钱开—收钱关")
-about:Label("收物开—收物关")
-about:Label("抢取款机开—抢取款机关")
-about:Label("抢银行开—抢银行关")
-about:Label("穿墙开—穿墙关")
