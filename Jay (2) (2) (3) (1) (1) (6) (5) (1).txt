@@ -233,6 +233,13 @@ player:AddButton({
   	end
 })
 
+player:AddButton({
+	Name = "egor神秘快跑男",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/GBmWn4eZ", true))()
+  	end
+})
+
 local Tab = Window:MakeTab({
 	Name = "小黑子",
 	Icon = "rbxassetid://7734068321",
