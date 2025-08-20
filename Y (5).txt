@@ -215,6 +215,10 @@ about:Button("玩家加入游戏提示",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 end)
 
+about:Button("后门LALOL",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/GAME-Backdoor-lalol-24947"))()
+end)
+
 about:Toggle("脚本框架变小一点", "", false, function(state)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
