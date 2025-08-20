@@ -240,6 +240,29 @@ player:AddButton({
   	end
 })
 
+player:AddButton({
+	Name = "获取管理员权限",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/sZpgTVas"))()
+  	end
+})
+
+player:AddButton({
+	Name = "飞车",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/-V2.0/refs/heads/main/%E5%86%B7%E9%A3%9E%E8%BD%A6%E6%BA%90%E7%A0%81.txt"))()
+end)
+  	end
+})
+
+player:AddButton({
+	Name = "全图范围",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+end)
+  	end
+})
+
 local Tab = Window:MakeTab({
 	Name = "小黑子",
 	Icon = "rbxassetid://7734068321",
