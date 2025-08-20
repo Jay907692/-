@@ -1,6 +1,14 @@
 loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))();
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
-local Window = OrionLib:MakeWindow({Name = "Jay脚本1.4", HidePremium = false, SaveConfig = false, IntroText = "JAY", ConfigFolder = "不喜勿喷，缝合脚本"})
+end
+Start = tick()
+Heartbeat:Connect(HeartbeatUpdate)
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "JAY脚本"; Text ="启动中"; Duration = 2; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "正在加载"; Text ="启动完毕"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "防踢出正在加载"; Text ="加载完毕"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "感谢最大股东牢汤和WM"; Text ="和其它赞助商"; 
+
+local Window = OrionLib:MakeWindow({Name = "Jay脚本1.6", HidePremium = false, SaveConfig = false, IntroText = "JAY", ConfigFolder = "不喜勿喷，缝合脚本"})
 
 local Tab = Window:MakeTab({
     Name = "Jay脚本",
