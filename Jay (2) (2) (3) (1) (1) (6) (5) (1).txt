@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))();
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
-local Window = OrionLib:MakeWindow({Name = "Jay脚本1.6", HidePremium = false, SaveConfig = false, IntroText = "JAY", ConfigFolder = "不喜勿喷，缝合脚本"})
+local Window = OrionLib:MakeWindow({Name = "Jay脚本1.4", HidePremium = false, SaveConfig = false, IntroText = "JAY", ConfigFolder = "不喜勿喷，缝合脚本"})
 
 local Tab = Window:MakeTab({
     Name = "Jay脚本",
@@ -119,8 +119,7 @@ player:AddTextbox({
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
-  spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Speed end end)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 	end
 })
 
