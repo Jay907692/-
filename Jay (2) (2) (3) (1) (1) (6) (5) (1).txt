@@ -11,6 +11,7 @@ local Tab = Window:MakeTab({
 Tab:AddParagraph("作者","Jay")
 Tab:AddLabel("此脚本完全免费")
 Tab:AddLabel("感谢牢汤.WM.风之子这几人一路上的支持")
+Tab:AddLabel("还要感谢其他赞助商一路上的支持")
 
 local Tab = Window:MakeTab({
 	Name = "通用功能",
@@ -41,9 +42,9 @@ end
 })    
 
 Tab:AddButton({
-  Name = "JAY甩飞",
+  Name = "JAY所有人甩飞",
   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/qjaj/5c58ab5e958d9ebb81612af4b99cd20e4ec696c7/%E7%94%A9%E4%BA%BA%20(1).txt"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
   end
 })
 
