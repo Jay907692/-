@@ -245,6 +245,10 @@ about:Button("自瞄（死亡消失）",function()
 loadstring(game:HttpGet("https://pastefy.app/ZYMlyhhz/raw",false))()
 end)
 
+about:Button("后门",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/GAME-Backdoor-lalol-24947"))()
+end)
+
 about:Button("宙斯自瞄",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Aimbot.lua"))()
 end)
