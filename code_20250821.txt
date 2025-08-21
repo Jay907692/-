@@ -1,0 +1,231 @@
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local CoreGui = game:GetService("CoreGui")
+
+    local ValidKeys = {
+    "JAY-SCRIPT-2025",
+    "SHADOW-KEY-001",
+    "GHOST-AUTH-999",
+    "KUN-AUTH-666"
+}
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ShadowAuthSystem"
+ScreenGui.Parent = CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local Background = Instance.new("Frame")
+Background.Name = "Background"
+Background.Parent = ScreenGui
+Background.Size = UDim2.new(1, 0, 1, 0)
+Background.BackgroundTransparency = 0.3
+Background.BorderSizePixel = 0
+
+local gradient = Instance.new("UIGradient", Background)
+gradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromHex("#00FF87")),
+    ColorSequenceKeypoint.new(0.5, Color3.fromHex("#60EFFF")),
+    ColorSequenceKeypoint.new(1, Color3.fromHex("#00FF87"))
+})
+gradient.Rotation = 90
+
+local MainPanel = Instance.new("Frame")
+MainPanel.Name = "MainPanel"
+MainPanel.Parent = ScreenGui
+MainPanel.Position = UDim2.new(0.5, -200, 0.5, -150)
+MainPanel.Size = UDim2.new(0, 400, 0, 300)
+MainPanel.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+MainPanel.BackgroundTransparency = 0.2
+MainPanel.BorderSizePixel = 2
+MainPanel.BorderColor3 = Color3.fromHex("#00FF87")
+MainPanel.Draggable = true
+MainPanel.Active = true
+
+local Title = Instance.new("TextLabel")
+Title.Name = "Title"
+Title.Parent = MainPanel
+Title.Position = UDim2.new(0, 0, 0, 10)
+Title.Size = UDim2.new(1, 0, 0, 40)
+Title.BackgroundTransparency = 1
+Title.Font = Enum.Font.GothamBold
+Title.Text = "JAY脚本 · 卡密验证"
+Title.TextColor3 = Color3.fromHex("#60EFFF")
+Title.TextScaled = true
+Title.TextSize = 18
+
+local KeyInput = Instance.new("TextBox")
+KeyInput.Name = "KeyInput"
+KeyInput.Parent = MainPanel
+KeyInput.Position = UDim2.new(0.1, 0, 0.3, 0)
+KeyInput.Size = UDim2.new(0.8, 0, 0, 50)
+KeyInput.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
+KeyInput.BackgroundTransparency = 0.5
+KeyInput.BorderColor3 = Color3.fromHex("#00FF87")
+KeyInput.BorderSizePixel = 1
+KeyInput.Font = Enum.Font.SourceSans
+KeyInput.PlaceholderText = "输入卡密"
+KeyInput.PlaceholderColor3 = Color3.new(0.5, 0.5, 0.5)
+KeyInput.Text = ""
+KeyInput.TextColor3 = Color3.new(1, 1, 1)
+KeyInput.TextScaled = true
+KeyInput.TextSize = 14
+KeyInput.ClearTextOnFocus = false
+
+local StatusText = Instance.new("TextLabel")
+StatusText.Name = "StatusText"
+StatusText.Parent = MainPanel
+StatusText.Position = UDim2.new(0, 0, 0.55, 0)
+StatusText.Size = UDim2.new(1, 0, 0, 30)
+StatusText.BackgroundTransparency = 1
+StatusText.Font = Enum.Font.SourceSans
+StatusText.Text = ""
+StatusText.TextColor3 = Color3.new(0.8, 0.8, 0.8)
+StatusText.TextScaled = true
+StatusText.TextSize = 12
+
+local AuthButton = Instance.new("TextButton")
+AuthButton.Name = "AuthButton"
+AuthButton.Parent = MainPanel
+AuthButton.Position = UDim2.new(0.25, 0, 0.7, 0)
+AuthButton.Size = UDim2.new(0.5, 0, 0, 50)
+AuthButton.BackgroundColor3 = Color3.fromHex("#00FF87")
+AuthButton.BackgroundTransparency = 0.2
+AuthButton.BorderColor3 = Color3.fromHex("#60EFFF")
+AuthButton.BorderSizePixel = 2
+AuthButton.Font = Enum.Font.GothamBold
+AuthButton.Text = "验证"
+AuthButton.TextColor3 = Color3.new(1, 1, 1)
+AuthButton.TextScaled = true
+AuthButton.TextSize = 16
+
+local ButtonGradient = Instance.new("UIGradient", AuthButton)
+ButtonGradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromHex("#00FF87")),
+    ColorSequenceKeypoint.new(1, Color3.fromHex("#60EFFF"))
+})
+
+local ParticleEmitter = Instance.new("ParticleEmitter")
+ParticleEmitter.Name = "Sparkles"
+ParticleEmitter.Parent = MainPanel
+ParticleEmitter.Position = UDim2.new(0.5, 0, 0, 0)
+ParticleEmitter.Size = UDim2.new(1, 0, 0, 5)
+ParticleEmitter.Texture = "rbxassetid://154967404"
+ParticleEmitter.Rate = 15
+ParticleEmitter.Lifetime = NumberRange.new(0.5, 1)
+ParticleEmitter.Speed = NumberRange.new(50, 100)
+ParticleEmitter.SpreadAngle = Vector2.new(180, 0)
+ParticleEmitter.Color = ColorSequence.new(Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF"))
+ParticleEmitter.Transparency = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 0),
+    NumberSequenceKeypoint.new(1, 1)
+})
+
+local function ValidateKey(inputKey)
+    local cleanedKey = inputKey:gsub("%s+", ""):upper()
+    for _, validKey in ipairs(ValidKeys) do
+        if cleanedKey == validKey then
+            return true
+        end
+    end
+    return false
+end
+
+AuthButton.MouseButton1Click:Connect(function()
+    local inputKey = KeyInput.Text
+    if inputKey == "" then
+        StatusText.Text = "❌ 请输入卡密"
+        StatusText.TextColor3 = Color3.fromHex("#FF4757")
+        return
+    end
+
+    AuthButton.Text = "验证中..."
+    AuthButton.BackgroundTransparency = 0.4
+    StatusText.Text = "🔍 验证中"
+    StatusText.TextColor3 = Color3.fromHex("#60EFFF")
+
+    task.wait(1.5)
+
+    if ValidateKey(inputKey) then
+        AuthButton.Text = "成功"
+        AuthButton.BackgroundColor3 = Color3.fromHex("#2ED573")
+        ButtonGradient.Color = ColorSequence.new(Color3.fromHex("#2ED573"), Color3.fromHex("#55EF93"))
+        StatusText.Text = "✅ 验证成功"
+        StatusText.TextColor3 = Color3.fromHex("#2ED573")
+
+        for i = 1, 20 do
+            MainPanel.Size = MainPanel.Size - UDim2.new(0, 20, 0, 15)
+            MainPanel.Position = MainPanel.Position + UDim2.new(0, 10, 0, 7.5)
+            MainPanel.BackgroundTransparency = MainPanel.BackgroundTransparency + 0.04
+            task.wait(0.05)
+        end
+
+        ScreenGui:Destroy()
+        game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
+        
+        local SuccessNotify = Instance.new("ScreenGui")
+        SuccessNotify.Name = "SuccessNotify"
+        SuccessNotify.Parent = CoreGui
+        
+        local NotifyLabel = Instance.new("TextLabel")
+        NotifyLabel.Parent = SuccessNotify
+        NotifyLabel.Position = UDim2.new(0.5, -150, 0.1, 0)
+        NotifyLabel.Size = UDim2.new(0, 300, 0, 40)
+        NotifyLabel.BackgroundColor3 = Color3.fromHex("#2ED573")
+        NotifyLabel.BackgroundTransparency = 0.2
+        NotifyLabel.BorderSizePixel = 1
+        NotifyLabel.BorderColor3 = Color3.fromHex("#55EF93")
+        NotifyLabel.Font = Enum.Font.Gotham
+        NotifyLabel.Text = "🎉 验证成功"
+        NotifyLabel.TextColor3 = Color3.new(1, 1, 1)
+        NotifyLabel.TextScaled = true
+        
+        task.wait(3)
+        SuccessNotify:Destroy()
+
+    else
+        AuthButton.Text = "重试"
+        AuthButton.BackgroundColor3 = Color3.fromHex("#FF4757")
+        ButtonGradient.Color = ColorSequence.new(Color3.fromHex("#FF4757"), Color3.fromHex("#FF6B81"))
+        StatusText.Text = "❌ 卡密无效"
+        StatusText.TextColor3 = Color3.fromHex("#FF4757")
+        
+        for i = 1, 4 do
+            MainPanel.Position = MainPanel.Position + UDim2.new(0, 10, 0, 0)
+            task.wait(0.05)
+            MainPanel.Position = MainPanel.Position - UDim2.new(0, 20, 0, 0)
+            task.wait(0.05)
+            MainPanel.Position = MainPanel.Position + UDim2.new(0, 10, 0, 0)
+        end
+    end
+end)
+
+local dragging = false
+local dragStart = Vector2.new()
+local originalPos = MainPanel.Position
+
+MainPanel.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position - originalPos.Position
+        MainPanel.Active = true
+    end
+end)
+
+MainPanel.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement and dragging then
+        originalPos = UDim2.new(0, input.Position.X - dragStart.X, 0, input.Position.Y - dragStart.Y)
+        MainPanel.Position = originalPos
+    end
+end)
+
+MainPanel.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = false
+        MainPanel.Active = false
+    end
+end)
+
+RunService.RenderStepped:Connect(function()
+    gradient.Offset = Vector2.new(tick() % 2 - 1, 0)
+    ButtonGradient.Offset = Vector2.new(tick() % 1 - 0.5, 0)
+end)
