@@ -150,12 +150,12 @@ do
     Tabs.DropdownTab = Tabs.ElementsSection:Tab({ Title = "doors", Icon = "chevrons-up-down", Desc = "Select from multiple options." })
     
     Tabs.WindowTab = Tabs.WindowSection:Tab({ 
-        Title = "Window and File Configuration", 
+        Title = "通用", 
         Icon = "settings", 
         Desc = "Manage window settings and file configurations.", 
         ShowTabTitle = true 
     })
-    Tabs.CreateThemeTab = Tabs.WindowSection:Tab({ Title = "Create Theme", Icon = "palette", Desc = "Design and apply custom themes." })
+    Tabs.CreateThemeTab = Tabs.WindowSection:Tab({ Title = "玩家", Icon = "palette", Desc = "Design and apply custom themes." })
     
     Tabs.LongTab = Tabs.OtherSection:Tab({ 
         Title = "Long and empty tab. with custom icon", 
