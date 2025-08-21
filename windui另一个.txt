@@ -130,28 +130,28 @@ do
     })
     
     Tabs.WindowSection = Window:Section({
-        Title = "Window Management",
+        Title = "通用功能",
         Icon = "app-window-mac",
         Opened = true,
     })
     
     Tabs.OtherSection = Window:Section({
-        Title = "Other",
+        Title = "QQ群",
         Opened = true,
     })
 
     
     Tabs.ParagraphTab = Tabs.ElementsSection:Tab({ Title = "公告", Icon = "type" })
-    Tabs.ButtonTab = Tabs.ElementsSection:Tab({ Title = "死铁轨", Icon = "mouse-pointer-2", Desc = "Contains interactive buttons for various actions." })
+    Tabs.ButtonTab = Tabs.ElementsSection:Tab({ Title = "神秘科技", Icon = "mouse-pointer-2", Desc = "Contains interactive buttons for various actions." })
     Tabs.CodeTab = Tabs.ElementsSection:Tab({ Title = "最强战场", Icon = "code", Desc = "Displays and manages code snippets." })
     Tabs.ColorPickerTab = Tabs.ElementsSection:Tab({ Title = "被遗弃", Icon = "paintbrush", Desc = "Choose and customize colors easily." })
     Tabs.DialogTab = Tabs.ElementsSection:Tab({ Title = "俄亥俄州", Icon = "message-square", Desc = "Dialog lol" })
     Tabs.NotificationTab = Tabs.ElementsSection:Tab({ Title = "生存99夜", Icon = "bell", Desc = "Configure and view notifications." })
     Tabs.ToggleTab = Tabs.ElementsSection:Tab({ Title = "BF", Icon = "toggle-left", Desc = "Switch settings on and off." })
     Tabs.SliderTab = Tabs.ElementsSection:Tab({ Title = "墨水游戏", Icon = "sliders-horizontal", Desc = "Adjust values smoothly with sliders." })
-    Tabs.InputTab = Tabs.ElementsSection:Tab({ Title = "Input", Icon = "keyboard", Desc = "Accept text and numerical input." })
-    Tabs.KeybindTab = Tabs.ElementsSection:Tab({ Title = "Keybind", Icon = "keyboard-off" })
-    Tabs.DropdownTab = Tabs.ElementsSection:Tab({ Title = "Dropdown", Icon = "chevrons-up-down", Desc = "Select from multiple options." })
+    Tabs.InputTab = Tabs.ElementsSection:Tab({ Title = "自然灾害模拟器", Icon = "keyboard", Desc = "Accept text and numerical input." })
+    Tabs.KeybindTab = Tabs.ElementsSection:Tab({ Title = "死铁轨", Icon = "keyboard-off" })
+    Tabs.DropdownTab = Tabs.ElementsSection:Tab({ Title = "doors", Icon = "chevrons-up-down", Desc = "Select from multiple options." })
     
     Tabs.WindowTab = Tabs.WindowSection:Tab({ 
         Title = "Window and File Configuration", 
@@ -193,7 +193,7 @@ Tabs.ParagraphTab:Paragraph({
     ThumbnailSize = 120 -- Thumbnail height
 })
 Tabs.ParagraphTab:Paragraph({
-    Title = "Paragraph with Image & Thumbnail & Buttons",
+    Title = "下面弄着凑数的一些各种颜色的小鸟",
     Desc = "Test Paragraph",
     Image = "https://play-lh.googleusercontent.com/7cIIPlWm4m7AGqVpEsIfyL-HW4cQla4ucXnfalMft1TMIYQIlf2vqgmthlZgbNAQoaQ",
     ImageSize = 42, -- default 30
@@ -201,22 +201,22 @@ Tabs.ParagraphTab:Paragraph({
     ThumbnailSize = 120, -- Thumbnail height
     Buttons = {
         {
-            Title = "Button 1",
+            Title = "无用",
             Variant = "Primary",
             Callback = function() print("1 Button") end,
             Icon = "bird",
         },
         {
-            Title = "Button 2",
+            Title = "没有用",
             Variant = "Primary",
             Callback = function() print("2 Button") end,
             Icon = "bird",
         },
         {
-            Title = "Button 3",
+            Title = "还是没有用",
             Variant = "Primary",
             Callback = function() print("3 Button") end,
-            Icon = "bird",
+            Icon = "更加没有用",
         },
     }
 })
@@ -226,18 +226,18 @@ Tabs.ParagraphTab:Divider()
 for _,i in next, { "Default", "Red", "Orange", "Green", "Blue", "Grey", "White" } do
     Tabs.ParagraphTab:Paragraph({
         Title = i,
-        Desc = "Paragraph with color",
+        Desc = "一些颜色的小鸟",
         Image = "bird",
-        Color = i ~= "Default" and i or nil,
+        Color = i ~= "下面没用" and i or nil,
         Buttons = {
             {
-                Title = "Button 1",
+                Title = "就是没用",
                 Variant = "Primary",
                 Callback = function() print("1 Button") end,
                 Icon = "bird",
             },
             {
-                Title = "Button 2",
+                Title = "下面懒得弄了反正没用",
                 Variant = "Primary",
                 Callback = function() print("2 Button") end,
                 Icon = "bird",
