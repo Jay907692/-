@@ -8,7 +8,7 @@ local Start = Instance.new("TextButton")
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-UI.Name = "Jay卡密系统"
+UI.Name = "JAY卡密系统"
 UI.Parent = ScreenGui
 UI.Active = true
 UI.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -67,11 +67,11 @@ Start.TextSize = 10
 Start.TextWrapped = true
 
 Start.MouseButton1Click:Connect(function()
-    if Key.Text == "comon" then
+    if Key.Text == "c5cc7394f7cb5500a9329e6c335d6585" then
         ScreenGui:Destroy()
        loadstring(game:HttpGet("https://pastebin.com/raw/aSZ514gr"))()
     else
-        game.Players.LocalPlayer:Kick("🔥🌳进群拿")
+        game.Players.LocalPlayer:Kick("密钥输入错误，你被踢出游戏")
     end
 end)
 
