@@ -29,10 +29,10 @@ end
 local Confirmed = false
 
 WindUI:Popup({
-    Title = "Welcome! Popup Example",
+    Title = "欢迎使用Jay脚本",
     Icon = "rbxassetid://129260712070622",
     IconThemed = true,
-    Content = "This is an Example UI for the " .. gradient("WindUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
+    Content = "这是Jay脚本 " .. gradient("2.0", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " 版本",
     Buttons = {
         {
             Title = "Cancel",
@@ -55,10 +55,10 @@ repeat wait() until Confirmed
 --
 
 local Window = WindUI:CreateWindow({
-    Title = "WindUI Library",
+    Title = "Jay脚本",
     Icon = "rbxassetid://129260712070622",
     IconThemed = true,
-    Author = "Example UI",
+    Author = "2.0版本",
     Folder = "CloudHub",
     Size = UDim2.fromOffset(580, 460),
     Transparent = true,
@@ -76,7 +76,7 @@ local Window = WindUI:CreateWindow({
     -- remove it below if you don't want to use the key system in your script.
     KeySystem = { -- <- keysystem enabled
         Key = { "1234", "5678" },
-        Note = "Example Key System. \n\nThe Key is '1234' or '5678",
+        Note = "Example Key System. \n\nThe Key is '1234' 或 '5678",
         -- Thumbnail = {
         --     Image = "rbxassetid://18220445082", -- rbxassetid only
         --     Title = "Thumbnail"
@@ -125,7 +125,7 @@ local Tabs = {}
 
 do
     Tabs.ElementsSection = Window:Section({
-        Title = "Elements",
+        Title = "通用功能",
         Opened = true,
     })
     
