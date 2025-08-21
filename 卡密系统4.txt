@@ -133,12 +133,12 @@ local function executeScript()
 end
 
 TextButton.MouseButton1Click:Connect(function()
-    if TextBox.Text == "JAYKey520" then
+    if TextBox.Text == "JAYKeyFly520" then
         Message.Text = "验证成功，正在加载脚本..."
         Message.TextColor3 = Color3.fromRGB(0, 255, 0)
         wait(1)
         ScreenGui:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/-/e3eef0693f3a5ae2be6eec4a6f8cd391a2541812/%E7%99%BD%E5%90%8D%E5%8D%95%E7%B3%BB%E7%BB%9F2.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/-/47efc1206f8b20a276f0e25b2121e2faabaf51c4/%E7%99%BD%E5%90%8D%E5%8D%95%E7%B3%BB%E7%BB%9F.txt"))()
         executeScript()
     else
         attempts = attempts + 1
