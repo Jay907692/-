@@ -143,7 +143,7 @@ do
     
     Tabs.ParagraphTab = Tabs.ElementsSection:Tab({ Title = "公告", Icon = "type" })
     Tabs.ButtonTab = Tabs.ElementsSection:Tab({ Title = "神秘科技", Icon = "mouse-pointer-2", Desc = "Contains interactive buttons for various actions." })
-    Tabs.CodeTab = Tabs.ElementsSection:Tab({ Title = "最强战场", Icon = "code", Desc = "Displays and manages code snippets." })
+    Tabs.CodeTab = Tabs.ElementsSection:Tab({ Title = "信息", Icon = "code", Desc = "Displays and manages code snippets." })
     Tabs.ColorPickerTab = Tabs.ElementsSection:Tab({ Title = "被遗弃", Icon = "paintbrush", Desc = "Choose and customize colors easily." })
     Tabs.DialogTab = Tabs.ElementsSection:Tab({ Title = "俄亥俄州", Icon = "message-square", Desc = "Dialog lol" })
     Tabs.NotificationTab = Tabs.ElementsSection:Tab({ Title = "生存99夜", Icon = "bell", Desc = "Configure and view notifications." })
@@ -194,7 +194,7 @@ Tabs.ParagraphTab:Paragraph({
 })
 
 Tabs.ButtonTab:Button({
-    Title = "Click Me",
+    Title = "英文最强战场",
     Desc = "This is a simple button",
     Callback = function() print("Button Clicked!") end
 })
@@ -228,45 +228,13 @@ Tabs.ButtonTab:Button({
 
 
 Tabs.CodeTab:Code({
-    Title = "example-code.luau",
-    Code = [[-- Example Luau code to test syntax highlighting
-local Players = game:GetService("Players")
-local HttpService = game:GetService("HttpService")
-
-local function factorial(n)
-    if n <= 1 then
-        return 1
-    else
-        return n * factorial(n - 1)
-    end
-end
-
-local result = factorial(5)
-print("Factorial of 5 is:", result)
-
-local playerName = "Player"
-local score = 100
-
-if score >= 100 then
-    print(playerName .. " earned an achievement!")
-else
-    warn("Need more points.")
-end
-
--- Table with nested values
-local playerStats = {
-    name = "Player",
-    health = 100,
-    inventory = {"sword", "shield", "potion"}
-}
-
-for i, item in ipairs(playerStats.inventory) do
-    print("Item in inventory:", item)
-end]],
+    Title = "作者信息",
+    Code = [[作者.JAY
+    副作者.牢汤]],
 })
 
 Tabs.CodeTab:Code({
-    Code = [[print("WindUI on top!")]],
+    Code = [[Q群号("658751343")]],
 })
 
 
