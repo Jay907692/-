@@ -100,7 +100,7 @@ CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
 CloseButton.Position = UDim2.new(1, -30, 0, 5)
 CloseButton.Size = UDim2.new(0, 25, 0, 25)
 CloseButton.Font = Enum.Font.GothamBold
-CloseButton.Text = "9178919191756"
+CloseButton.Text = "X"
 CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseButton.TextSize = 14
 
@@ -133,12 +133,12 @@ local function executeScript()
 end
 
 TextButton.MouseButton1Click:Connect(function()
-    if TextBox.Text == "卡密" then
+    if TextBox.Text == "TXXPSCHM" then
         Message.Text = "验证成功，正在加载脚本..."
         Message.TextColor3 = Color3.fromRGB(0, 255, 0)
         wait(1)
         ScreenGui:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/-/949b768915a5ba390c2687c42532852aa6755334/%E7%99%BD%E5%90%8D%E5%8D%95%E7%B3%BB%E7%BB%9F2.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jay907692/-/e3eef0693f3a5ae2be6eec4a6f8cd391a2541812/%E7%99%BD%E5%90%8D%E5%8D%95%E7%B3%BB%E7%BB%9F2.txt"))()
         executeScript()
     else
         attempts = attempts + 1
