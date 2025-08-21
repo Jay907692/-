@@ -75,8 +75,8 @@ local Window = WindUI:CreateWindow({
 
     -- remove it below if you don't want to use the key system in your script.
     KeySystem = { -- <- keysystem enabled
-        Key = { "10086917891917878" },
-        Note = "Example Key System. \n\n密钥找群主买",
+        Key = { "1867891" },
+        Note = "给我输入卡密吧 \n\n密钥找群主买",
         -- Thumbnail = {
         --     Image = "rbxassetid://18220445082", -- rbxassetid only
         --     Title = "Thumbnail"
