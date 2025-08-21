@@ -35,13 +35,13 @@ WindUI:Popup({
     Content = "这是Jay脚本 " .. gradient("2.0", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " 版本",
     Buttons = {
         {
-            Title = "Cancel",
+            Title = "退出",
             --Icon = "",
             Callback = function() end,
             Variant = "Secondary", -- Primary, Secondary, Tertiary
         },
         {
-            Title = "Continue",
+            Title = "进入",
             Icon = "arrow-right",
             Callback = function() Confirmed = true end,
             Variant = "Primary", -- Primary, Secondary, Tertiary
@@ -125,7 +125,7 @@ local Tabs = {}
 
 do
     Tabs.ElementsSection = Window:Section({
-        Title = "通用功能",
+        Title = "脚本专区",
         Opened = true,
     })
     
@@ -141,13 +141,13 @@ do
     })
 
     
-    Tabs.ParagraphTab = Tabs.ElementsSection:Tab({ Title = "Paragraph", Icon = "type" })
-    Tabs.ButtonTab = Tabs.ElementsSection:Tab({ Title = "Button", Icon = "mouse-pointer-2", Desc = "Contains interactive buttons for various actions." })
-    Tabs.CodeTab = Tabs.ElementsSection:Tab({ Title = "Code", Icon = "code", Desc = "Displays and manages code snippets." })
-    Tabs.ColorPickerTab = Tabs.ElementsSection:Tab({ Title = "ColorPicker", Icon = "paintbrush", Desc = "Choose and customize colors easily." })
-    Tabs.DialogTab = Tabs.ElementsSection:Tab({ Title = "Dialog", Icon = "message-square", Desc = "Dialog lol" })
-    Tabs.NotificationTab = Tabs.ElementsSection:Tab({ Title = "Notification", Icon = "bell", Desc = "Configure and view notifications." })
-    Tabs.ToggleTab = Tabs.ElementsSection:Tab({ Title = "Toggle", Icon = "toggle-left", Desc = "Switch settings on and off." })
+    Tabs.ParagraphTab = Tabs.ElementsSection:Tab({ Title = "墨水游戏", Icon = "type" })
+    Tabs.ButtonTab = Tabs.ElementsSection:Tab({ Title = "死铁轨", Icon = "mouse-pointer-2", Desc = "Contains interactive buttons for various actions." })
+    Tabs.CodeTab = Tabs.ElementsSection:Tab({ Title = "最强战场", Icon = "code", Desc = "Displays and manages code snippets." })
+    Tabs.ColorPickerTab = Tabs.ElementsSection:Tab({ Title = "被遗弃", Icon = "paintbrush", Desc = "Choose and customize colors easily." })
+    Tabs.DialogTab = Tabs.ElementsSection:Tab({ Title = "俄亥俄州", Icon = "message-square", Desc = "Dialog lol" })
+    Tabs.NotificationTab = Tabs.ElementsSection:Tab({ Title = "生存99夜", Icon = "bell", Desc = "Configure and view notifications." })
+    Tabs.ToggleTab = Tabs.ElementsSection:Tab({ Title = "BF", Icon = "toggle-left", Desc = "Switch settings on and off." })
     Tabs.SliderTab = Tabs.ElementsSection:Tab({ Title = "Slider", Icon = "sliders-horizontal", Desc = "Adjust values smoothly with sliders." })
     Tabs.InputTab = Tabs.ElementsSection:Tab({ Title = "Input", Icon = "keyboard", Desc = "Accept text and numerical input." })
     Tabs.KeybindTab = Tabs.ElementsSection:Tab({ Title = "Keybind", Icon = "keyboard-off" })
