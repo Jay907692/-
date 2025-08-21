@@ -134,15 +134,10 @@ do
         Icon = "app-window-mac",
         Opened = true,
     })
-    
-    Tabs.OtherSection = Window:Section({
-        Title = "QQ群",
-        Opened = true,
-    })
 
     
     Tabs.ParagraphTab = Tabs.ElementsSection:Tab({ Title = "公告", Icon = "type" })
-    Tabs.ButtonTab = Tabs.ElementsSection:Tab({ Title = "神秘科技", Icon = "mouse-pointer-2", Desc = "Contains interactive buttons for various actions." })
+    Tabs.ButtonTab = Tabs.ElementsSection:Tab({ Title = "最强战场", Icon = "mouse-pointer-2", Desc = "Contains interactive buttons for various actions." })
     Tabs.CodeTab = Tabs.ElementsSection:Tab({ Title = "信息", Icon = "code", Desc = "Displays and manages code snippets." })
     Tabs.ColorPickerTab = Tabs.ElementsSection:Tab({ Title = "被遗弃", Icon = "paintbrush", Desc = "Choose and customize colors easily." })
     Tabs.DialogTab = Tabs.ElementsSection:Tab({ Title = "俄亥俄州", Icon = "message-square", Desc = "Dialog lol" })
@@ -161,28 +156,6 @@ do
     })
     Tabs.CreateThemeTab = Tabs.WindowSection:Tab({ Title = "Create Theme", Icon = "palette", Desc = "Design and apply custom themes." })
     
-    Tabs.LongTab = Tabs.OtherSection:Tab({ 
-        Title = "Long and empty tab. with custom icon", 
-        Icon = "rbxassetid://129260712070622", 
-        IconThemed = true, 
-        Desc = "Long Description" 
-    })
-    Tabs.LockedTab = Tabs.OtherSection:Tab({ Title = "Locked Tab", Icon = "lock", Desc = "This tab is locked", Locked = true })
-    Tabs.TabWithoutIcon = Tabs.OtherSection:Tab({ Title = "Tab Without icon", ShowTabTitle = true })
-    Tabs.Tests = Tabs.OtherSection:Tab({ Title = "Tests", Icon = "https://raw.githubusercontent.com/Footagesus/WindUI/main/docs/ui.png", ShowTabTitle = true })
-    
-    
-    Tabs.LastSection = Window:Section({
-        Title = "Section without tabs",
-        --Opened = true,
-    })
-    
-    Tabs.ConfigTab = Window:Tab({ Title = "Config", Icon = "file-cog" })
-end
-
-
-
-Window:SelectTab(1)
 
 Tabs.ParagraphTab:Paragraph({
     Title = "JAY和牢汤共同制作",
