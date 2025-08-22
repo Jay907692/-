@@ -21,10 +21,19 @@ local WhitelistedPlayers = {
     ["hkqpeyyy"] = true,
     ["herrg_china"] = true,
     ["cvcvcvcvcv874"] = true,
-    ["jcjdhdhfh2"] = true,
+    ["cnNnb666"] = true,
     ["shaoyuniu1391"] = true,
     ["54188sbb85"] = true,
-    ["sjzzz3"] = true,   
+    ["5201314cm"] = true,
+    ["uxwjidj"] = true,
+    ["VIP91919191919191"] = true,
+    ["xianrenzhanga"] = true,
+    ["zegenb666"] = true,
+    ["ChinaTKY"] = true,
+    ["jack_gwcdk"] = true,
+    ["dufuddudu2"] = true,
+    ["sjzzz3"] = true,
+    ["sjzzz3"] = true,
 }
 
 local function IsWhitelisted(player)
